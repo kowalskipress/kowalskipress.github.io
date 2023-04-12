@@ -1,0 +1,210 @@
+/* Reset
+–––––––––––––––––––––––––––––––––––––––––––– */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    max-width: 100% !important;
+    display: block !important;
+}
+
+
+/* Layout
+–––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+    font-size: 1em !important;
+    line-height: 1.4 !important;
+    color: #5F5F5F !important;
+    background-color: #f3ede6 !important;
+}
+
+.notion-header__cover.no-cover {
+  display: none !important;
+}
+
+.notion-root {
+  border: 1px solid black !important;
+  border-top: 0 !important;
+}
+
+.notion-root > * {
+  border-top: 1px solid black !important;
+  padding: 4% 6% 5% 6%!important;
+}
+
+.notion-root > .notion-heading {
+  padding: 4% 6% 2% 6% !important;
+}
+
+.notion-root .notion-heading + *,
+.notion-column-list + .notion-column-list 
+{
+  border-top: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notion-column-list {
+    padding: 3% 5% 4% 5% !important;
+    justify-content: space-between !important;
+}
+
+.notion-column-list, .notion-column  {
+  margin: 0 !important;
+}
+
+.notion-column-list:not(#block-c78b470fa71c4f7bb676a8166765180d) .notion-column {
+    padding: 0 !important;
+    width: 47% !important;
+}
+
+.notion-header__title {
+  text-align: center !important;
+  margin: 1.6em 0 1em 0 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.notion-heading {
+    letter-spacing: -0.01em !important;
+}
+
+
+/* About
+–––––––––––––––––––––––––––––––––––––––––––– */
+
+#block-ea09b763c58c4aaf9e607be04b8c654c {
+  padding: 0 !important;
+  border-top: 1px solid black !important;
+}
+
+#block-ea09b763c58c4aaf9e607be04b8c654c .notion-image {
+    margin: 0 !important;
+    border-right: 1px solid black;
+}
+
+#block-ea09b763c58c4aaf9e607be04b8c654c .notion-column:nth-child(2) {
+    padding: 4% 4% 3% 2.8% !important;
+}
+
+
+/* Blocks
+–––––––––––––––––––––––––––––––––––––––––––– */
+
+.notion-root > .notion-quote {
+  border-left: 0 !important;
+  margin: 0 !important;
+  padding: 8% 10% 9% 10%!important;
+}
+
+.notion-root > .notion-image {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.notion-root > .notion-callout {
+  margin: 0 !important;
+  border-top: 1px solid black !important;
+}
+
+.notion-root > .notion-embed {
+  padding: 0 !important;
+}
+
+.notion-text.bg-gray {
+  text-align: center !important;
+}
+
+.bg-gray {
+    background-color: #616477 !important;
+    color: #e6e6e6 !important;
+}
+
+.link {
+  opacity: 1 !important;
+}
+
+.notion-root h2.notion-heading  {
+padding-bottom: 6px !important;
+}
+
+.notion-numbered-list,
+.notion-bulleted-list {
+  padding-left: 10.6% !important;
+}
+
+.notion-root h2 + .notion-column-list  {
+  margin-top: 12px !important;
+}
+
+.notion-page#block-how-to-use-this-template {
+  display: none !important;
+}
+
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––– */
+
+.notion-text__content,
+.notion-numbered-list,
+.notion-bulleted-list {
+  letter-spacing: -0.011em !important;
+font-size: clamp(1.125rem, 1.0114rem + 0.303vw, 1.375rem) !important;
+}
+
+h1.notion-heading,
+.notion-header__title {
+  font-size: clamp(2.625rem, 2.516rem + 0.2992vw, 2.875rem) !important;
+}
+
+.notion-root h2.notion-heading,
+.notion-root > .notion-quote {
+  font-size: clamp(1.875rem, 1.7614rem + 0.303vw, 2.125rem) !important;
+}
+
+h3.notion-heading {
+font-size: clamp(1.5rem, 1.4432rem + 0.1515vw, 1.625rem) !important;
+  padding-bottom: 4px !important;
+}
+
+
+/* Queries
+–––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 600px) {
+  
+  #block-ea09b763c58c4aaf9e607be04b8c654c {
+    display: block;
+  }
+  
+  .notion-column-list:not(#block-c78b470fa71c4f7bb676a8166765180d) .notion-column {
+    width: 100% !important;
+}
+
+#block-ea09b763c58c4aaf9e607be04b8c654c .notion-column:nth-child(2) {
+  padding: 8% 10% 9% 10%!important;
+}
+
+.notion-root > *,
+.notion-root > .notion-heading {
+  padding: 8% 10% 9% 10%!important;
+}
+
+.notion-root > .notion-quote {
+  line-height: 1.25;
+}
+    
+  }
+
