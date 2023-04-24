@@ -1,7 +1,7 @@
 /*
 
 Botanical Theme for Super
-Developed by Kowalski Press
+By Kowalski Press
 https://kowalskipress.github.io/
 
 */
@@ -29,18 +29,11 @@ img {
     display: block !important;
 }
 
-
-/* Layout
-–––––––––––––––––––––––––––––––––––––––––––– */
-
 body {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;
-    font-size: 1em !important;
     line-height: 1.4 !important;
-    color: #5F5F5F !important;
-    background-color: #f3ede6 !important;
 }
 
 .notion-header__cover.no-cover {
@@ -48,24 +41,33 @@ body {
 }
 
 .notion-root {
-    border: 1px solid black !important;
-    border-top: 0 !important;
+    border: 1px solid var(--color-border-default) !important;
 }
 
 .notion-root>* {
-    border-top: 1px solid black !important;
-    padding: 4% 6% 5% 6% !important;
+    padding-left: 6% !important;
+    padding: right: 6% !important;
+}
+
+.notion-divider {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid var(--color-border-default) !important;
+    height: 1px !important;
 }
 
 .notion-root>.notion-heading {
-    padding: 4% 6% 2% 6% !important;
+    padding: 4% 6% 5px 6% !important;
+}
+
+.notion-heading {
+    padding-bottom: 5px !important;
 }
 
 .notion-root .notion-heading+*,
 .notion-column-list+.notion-column-list,
 .notion-root .notion-text+.notion-text,
 .notion-root .notion-text+.notion-code {
-    border-top: 0 !important;
     padding-top: 0 !important;
     margin-top: 0 !important;
 }
@@ -78,6 +80,10 @@ body {
 .notion-column-list,
 .notion-column {
     margin: 0 !important;
+}
+
+.notion-heading+.notion-column-list {
+    margin-top: 10px !important;
 }
 
 .notion-column-list:not(#block-c78b470fa71c4f7bb676a8166765180d) .notion-column {
@@ -95,13 +101,15 @@ body {
     letter-spacing: -0.01em !important;
 }
 
+.notion-column-list .notion-text {
+    padding: 0 !important;
+}
 
 /* About
 –––––––––––––––––––––––––––––––––––––––––––– */
 
 .notion-column-list#block-ea09b763c58c4aaf9e607be04b8c654c {
     padding: 0 !important;
-    border-top: 1px solid black !important;
 }
 
 .notion-column-list#block-ea09b763c58c4aaf9e607be04b8c654c .notion-column {
@@ -110,59 +118,55 @@ body {
 
 .notion-column-list#block-ea09b763c58c4aaf9e607be04b8c654c .notion-image {
     margin: 0 !important;
-    border-right: 1px solid black !important;
+    border-right: 1px solid var(--color-border-default) !important;
 }
 
 .notion-column-list#block-ea09b763c58c4aaf9e607be04b8c654c .notion-column:nth-child(2) {
     padding: 4% 4% 3% 3% !important;
 }
 
-
 /* Blocks
 –––––––––––––––––––––––––––––––––––––––––––– */
 
-.notion-root>.notion-quote {
+.notion-text,
+.notion-numbered-list,
+.notion-bulleted-list {
+    padding: 4% 6% 5% 6% !important;
+}
+
+.notion-quote {
     border-left: 0 !important;
     margin: 0 !important;
     padding: 8% 10% 9% 10% !important;
 }
 
-.notion-root>.notion-image {
+.notion-image {
     padding: 0 !important;
     margin: 0 !important;
 }
 
-.notion-root>.notion-callout {
+.notion-callout {
     margin: 0 !important;
-    border-top: 1px solid black !important;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
 }
 
-.notion-root>.notion-embed {
+.notion-embed {
     padding: 0 !important;
 }
 
-.notion-root .notion-text+.notion-text.bg-gray {
+.notion-root .notion-text.bg-gray {
     text-align: center !important;
     padding-top: 4% !important;
-    background-color: #616477 !important;
-    color: #e6e6e6 !important;
 }
 
 .link {
     opacity: 1 !important;
 }
 
-.notion-root h2.notion-heading {
-    padding-bottom: 6px !important;
-}
-
 .notion-numbered-list,
 .notion-bulleted-list {
     padding-left: 10.6% !important;
-}
-
-.notion-root h2+.notion-column-list {
-    margin-top: 12px !important;
 }
 
 .notion-page#block-how-to-use-this-template {
@@ -171,39 +175,13 @@ body {
 
 .notion-text.bg-gray .notion-text__content span {
     display: block;
-    font-weight: 600 !important;
     line-height: 1.3 !important;
     margin: 0;
 }
 
-
-/* Fonts
-–––––––––––––––––––––––––––––––––––––––––––– */
-
-.notion-text__content,
-.notion-numbered-list,
-.notion-bulleted-list {
-    letter-spacing: -0.011em !important;
-    font-size: clamp(1.125rem, 1.0114rem + 0.303vw, 1.375rem) !important;
-}
-
-h1.notion-heading,
-.notion-header__title {
-    font-size: clamp(2.625rem, 2.516rem + 0.2992vw, 2.875rem) !important;
-}
-
-.notion-root h2.notion-heading,
-.notion-root>.notion-quote {
-    font-size: clamp(1.875rem, 1.7614rem + 0.303vw, 2.125rem) !important;
-}
-
-h3.notion-heading {
-    font-size: clamp(1.5rem, 1.4432rem + 0.1515vw, 1.625rem) !important;
-    padding-bottom: 4px !important;
-}
-
-.notion-text.bg-gray .notion-text__content span {
-    font-size: 16px !important;
+pre {
+    width: 92%;
+    border: 1px solid var(--color-border-default) !important;
 }
 
 
@@ -240,6 +218,13 @@ h3.notion-heading {
     .notion-root>.notion-bulleted-list,
     .notion-root>.notion-numbered-list {
         padding-left: 16% !important;
+    }
+
+    .notion-image,
+    .notion-divider,
+    .notion-embed {
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
 }
