@@ -46,7 +46,7 @@ body {
 
 .notion-root>* {
     padding-left: 6% !important;
-    padding: right: 6% !important;
+    padding-right: 6% !important;
 }
 
 .notion-divider {
